@@ -1,0 +1,29 @@
+# ==================== Hetzner Cloud ====================
+# Copy this file to terraform.tfvars and update with your values
+
+hcloud_token = "YOUR_HETZNER_CLOUD_API_TOKEN"
+ssh_public_key = "ssh-rsa AAAAB3NzaC1yc2E... (your public key)"
+
+hcloud_server_name = "job-processor-server"
+hcloud_server_type = "cpx11"
+hcloud_server_image = "ubuntu-22.04"
+hcloud_location = "nbg1"
+
+allow_ssh_from_ips = ["0.0.0.0/0"]
+
+# ==================== Azure ====================
+
+azure_subscription_id = "YOUR_AZURE_SUBSCRIPTION_ID"
+azure_client_id = "YOUR_SERVICE_PRINCIPAL_CLIENT_ID"
+azure_client_secret = "YOUR_SERVICE_PRINCIPAL_CLIENT_SECRET"
+azure_tenant_id = "YOUR_AZURE_TENANT_ID"
+
+azure_location = "eastus"
+azure_openai_sku = "S0"
+azure_openai_model = "gpt-35-turbo"
+azure_openai_model_version = "0613"
+azure_openai_capacity = 30
+
+# ==================== Common ====================
+
+environment = "dev"
